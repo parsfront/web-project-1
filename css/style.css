@@ -105,6 +105,7 @@ button {
     font-size: 1.85rem;
     cursor: pointer;
     transition: background ease-in-out 0.5s;
+    animation: button 1.5s infinite alternate 2s;
 }
 
 button:hover {
@@ -147,32 +148,46 @@ button:focus {
     position: absolute;
     top: 0%;
     right: 0%;
+    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
 }
 
-.moving-cloud-1 {}
+.moving-cloud-1 {
+    z-index: -1;
+}
 
 .moving-cloud-2 {
     top: 20%;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.5;
 }
 
 @keyframes cloudAnimation {
-    0% {}
+    from {
+        transform: translate(10%, -10%);
+    }
 
-    100% {}
+    to {
+        transform: translate(0%, 00%);
+    }
 }
 
+@keyframes button {
+    0% {
+        background: rgb(165, 227, 248);
+    }
 
+    25% {
+        background: rgb(147, 209, 229);
+    }
 
+    75% {
+        background: rgb(116, 202, 231);
+    }
 
-
-
-
-
-
-
-
+    100% {
+        background: rgb(80, 191, 228);
+    }
+}
 
 
 
@@ -188,5 +203,15 @@ button:focus {
 
     #logo {
         padding: 1rem;
+    }
+
+    .cloud {
+        height: 50rem;
+        pointer-events: none;
+    }
+
+    .locations-head h3 {
+        color: white;
+        background: rgba(19, 28, 39, 0.8);
     }
 }
