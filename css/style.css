@@ -189,6 +189,13 @@ button:focus {
     }
 }
 
+/*benefits section*/
+.benefits-head{
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+}
 
 
 /*media query*/
