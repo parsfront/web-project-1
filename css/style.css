@@ -52,6 +52,9 @@ a:hover {
 .main-header {
     background: #131c27;
     color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
 }
 
 nav {
@@ -238,6 +241,78 @@ button:focus {
     padding: 3rem;
 }
 
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), transparent), url(../images/contact-mountain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.7);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.form-wrapper input {
+    outline: none;
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*media query*/
 @media screen and (max-width: 950px) {
     html {
@@ -260,5 +335,17 @@ button:focus {
     .locations-head h3 {
         color: white;
         background: rgba(19, 28, 39, 0.8);
+    }
+
+    footer {
+        text-align: center
+    }
+
+    footer h5 {
+        padding-bottom: 3rem;
+    }
+
+    .footer-wrapper {
+        width: 100%;
     }
 }
