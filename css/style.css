@@ -174,24 +174,6 @@ button:focus {
     }
 }
 
-@keyframes button {
-    0% {
-        background: rgb(165, 227, 248);
-    }
-
-    25% {
-        background: rgb(147, 209, 229);
-    }
-
-    75% {
-        background: rgb(116, 202, 231);
-    }
-
-    100% {
-        background: rgb(80, 191, 228);
-    }
-}
-
 /*benefits section*/
 .benefits-head {
     background: #343c44;
